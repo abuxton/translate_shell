@@ -32,10 +32,19 @@ N/A
 ### Beginning with translate_shell
 
 include translate_shell
+class {'translate_shell':
+  bin_dir =>  '/path/to/chosen/bin/dir', #default /usr/local/bin/
+  }
 
 ## Usage
+uses ISO-639-1 codes supported by Google https://cloud.google.com/translate/docs/languages
 
-Simple module to install executable
+Simple module to install executable of translate-shell `trans`
+CLI usage
+`trans -t fr hello` #-t is target language code ie french is fr
+
+usage with puppet man pages or help pages for example
+`puppet describe file >file.txt && trans -t fr -b -i file.txt,`
 
 ## Reference
 
@@ -50,5 +59,3 @@ only tested on Rhel, centos and Darwin
 feel free to update to add homebrew support, Debian etc
 
 ## Release Notes/Contributors/Etc **Optional**
-
- 
