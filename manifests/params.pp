@@ -5,8 +5,9 @@
 #
 class translate_shell::params {
   case $::osfamily {
-    'RedHat'{
+    'RedHat', 'Darwin'{
       $package_name = 'trans'
+      $userlocalbin  = '/usr/local/bin'
     }
     default: {
       fail("${::operatingsystem} not supported")
