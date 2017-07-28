@@ -5,7 +5,7 @@
 #
 class translate_shell::params {
   case $::osfamily {
-    'RedHat', 'Darwin'{
+    'RedHat', 'Darwin': {
       $package_name = 'trans'
       $userlocalbin  = '/usr/local/bin'
     }

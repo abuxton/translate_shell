@@ -17,6 +17,6 @@ class translate_shell (
 
   # validate parameters here
 
-  class { '::translate_shell::install': } ->
-  Class['::translate_shell']
+  class { '::translate_shell::install': }
+  -> Class['::translate_shell']
 }
