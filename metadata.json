@@ -1,0 +1,33 @@
+{
+  "name": "abuxton-translate_shell",
+  "version": "0.1.0",
+  "author": "abuxton",
+  "summary": "module to install https://github.com/soimort/translate-shell",
+  "license": "Apache-2.0",
+  "source": "github.com/abuxton/translate_shell",
+  "project_page": "https://github.com/abuxton/translate_shell",
+  "issues_url": "https://github.com/abuxton/translate_shell/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
