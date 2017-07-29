@@ -12,7 +12,8 @@
 #
 class translate_shell (
   $package_name = $::translate_shell::params::package_name,
-  $bin_dir = $::translate_shell::userlocalbin,
+  $bin_dir      = $::translate_shell::params::userlocalbin,
+  $source       = $::translate_shell::params::source,
 ) inherits ::translate_shell::params {
 
   # validate parameters here

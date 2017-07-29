@@ -27,7 +27,12 @@ Deploys using https://github.com/soimort/translate-shell#option-1-direct-downloa
 
 ### Setup Requirements **OPTIONAL**
 
-N/A
+You can copy manually install trans by adding executable the files dir to the module and using the puppet source to distribute it
+`puppet://modules/translate_shell/trans`
+or
+`class { 'translate_shell':
+  source => 'puppet://modules/translate_shell/trans',
+}`
 
 ### Beginning with translate_shell
 
